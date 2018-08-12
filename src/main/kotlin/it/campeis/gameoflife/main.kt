@@ -28,7 +28,29 @@ fun main(args: Array<String>) {
             rectangularWorld(width,width),
             triangularWorld(width),
             circularWorld(width/2,width/2,width/2),
-            unboundedWorld()
+            unboundedWorld(),
+            matrixWorld {
+                r (x,x,x,x,x,x,o,o,o,o,o,o,o,o,x,x,x,x,x,x)
+                r (x,x,x,x,x,x,x,o,o,o,o,o,o,x,x,x,x,x,x,x)
+                r (o,x,x,x,x,x,x,x,o,o,o,o,x,x,x,x,x,x,x,o)
+                r (o,x,x,x,x,x,x,x,x,o,o,x,x,x,x,x,x,x,x,o)
+                r (o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o)
+                r (o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o)
+                r (o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o)
+                r (o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o)
+                r (o,o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o,o)
+                r (o,o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o,o)
+                r (o,o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o,o)
+                r (o,o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o,o)
+                r (o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o)
+                r (o,o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o,o)
+                r (o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o)
+                r (o,o,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,o,o)
+                r (o,x,x,x,x,x,x,x,x,o,o,x,x,x,x,x,x,x,x,o)
+                r (o,x,x,x,x,x,x,x,o,o,o,o,x,x,x,x,x,x,x,o)
+                r (x,x,x,x,x,x,x,o,o,o,o,o,o,x,x,x,x,x,x,x)
+                r (x,x,x,x,x,x,o,o,o,o,o,o,o,o,x,x,x,x,x,x)
+            }
     ).forEach { world ->
         val game = classicGame(world)
 
