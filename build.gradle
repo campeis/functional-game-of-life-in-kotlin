@@ -1,5 +1,5 @@
 plugins {
-    id "org.jetbrains.kotlin.jvm" version "1.9.22"
+    id "org.jetbrains.kotlin.jvm" version "2.2.0"
 }
 
 group 'it.campeis'
@@ -23,8 +23,8 @@ test {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "18"
+    kotlinOptions.jvmTarget = "24"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "18"
+    kotlinOptions.jvmTarget = "24"
 }
