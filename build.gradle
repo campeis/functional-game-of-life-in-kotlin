@@ -2,8 +2,8 @@ plugins {
     id "org.jetbrains.kotlin.jvm" version "2.2.0"
 }
 
-group 'it.campeis'
-version '1.0-SNAPSHOT'
+group = 'it.campeis'
+version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
