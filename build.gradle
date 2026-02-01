@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     id "org.jetbrains.kotlin.jvm" version "2.3.0"
 }
@@ -22,9 +24,15 @@ test {
     }
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "25"
+kotlin {
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_25)
+        javaParameters.set(true)
+    }
 }
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "25"
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(25))
+    }
 }
