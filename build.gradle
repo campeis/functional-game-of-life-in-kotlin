@@ -23,8 +23,8 @@ test {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "24"
+    kotlinOptions.jvmTarget = "25"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "24"
+    kotlinOptions.jvmTarget = "25"
 }
