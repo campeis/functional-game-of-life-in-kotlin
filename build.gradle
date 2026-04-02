@@ -27,13 +27,13 @@ test {
 
 kotlin {
     compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_25)
+        jvmTarget.set(JvmTarget.JVM_26)
         javaParameters.set(true)
     }
 }
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(25))
+        languageVersion.set(JavaLanguageVersion.of(26))
     }
 }
