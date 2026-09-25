@@ -27,7 +27,7 @@ test {
 
 kotlin {
     compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_27)
+        jvmTarget.set(JvmTarget.JVM_24)
         javaParameters.set(true)
     }
 }
